@@ -32,9 +32,11 @@
                     </ul>
                 @else
                     {{-- ユーザ登録ページへのリンク --}}
+                    <ul class="navbar-nav">
                     <li class="nav-item">{!! link_to_route('signup.get', 'Signup', [], ['class' => 'nav-link']) !!}</li>
                     {{-- ログインページへのリンク --}}
                     <li class="nav-item">{!! link_to_route('login', 'Login', [], ['class' => 'nav-link']) !!}</li>
+                    </ul>
                 @endif
             
         </div>
